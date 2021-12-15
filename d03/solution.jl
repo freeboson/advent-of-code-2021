@@ -41,8 +41,8 @@ function rating(fn, pref)
     parse(Int, first(v), base=2)
 end
 
-oxygen(n, i) = l -> n ≥ 0 ? l[i] == '1'  : l[i] == '0'
-co2(n, i) = l -> n < 0 ? l[i] == '1'  : l[i] == '0'
+oxygen(n, i) = n ≥ 0 ? l -> l[i] == '1' : l -> l[i] == '0'
+co2(n, i) = n < 0 ? l -> l[i] == '1' : l -> l[i] == '0'
 
 println(@test rating("test", oxygen) == 23)
 println(@test rating("test", co2) == 10)
