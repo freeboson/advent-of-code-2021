@@ -12,5 +12,5 @@
 
 ```
 
-My solutions for [https://adventofcode.com/2021](Advent of Code), probably all
+My solutions for [Advent of Code](https://adventofcode.com/2021), probably all
 in Julia.
